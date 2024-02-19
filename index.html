@@ -82,7 +82,7 @@
                 Feel free to replace both charts with your own examples.
             </p>
         </div>
-        <figure id="figure_2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="figure_3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
     <!-- Do you want to add more sections? -->
@@ -97,9 +97,11 @@
 
         var figure_1_spec = "basic_chart_example.json"; // We're storing the URL of the graph we want to display in a variable
         var figure_2_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/advanced_chart_example.json";
+        var figure_3_spec = "firstChart.json"; // We're storing the URL of the graph we want to display in a variable
 
         vegaEmbed('#figure_1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
         vegaEmbed('#figure_2', figure_2_spec)
+        vegaEmbed('#figure_3', figure_3_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for figure_3, and adding a new section in the HTML
